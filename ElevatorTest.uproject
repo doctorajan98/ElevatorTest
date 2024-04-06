@@ -1,0 +1,22 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{6B00F47C-4E6C-52FE-5B3D-B5B061CB5681}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "ElevatorTest",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ModelingToolsEditorMode",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		}
+	]
+}
