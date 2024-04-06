@@ -1,5 +1,9 @@
 # Welcome to Khairul Azanni Test Project
 
+Installation:
+-
+Clone project and git lfs pull
+
 How to test:
 -
 press play and walk on to white platform press up button to call down elevator.
