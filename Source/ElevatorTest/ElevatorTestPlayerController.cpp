@@ -16,4 +16,10 @@ void AElevatorTestPlayerController::BeginPlay()
 
 		UE_LOG(LogTemp, Warning, TEXT("BeginPlay"));
 	}
+
+	if (IsValid(ElevatorWidgetClass))
+	{
+		ElevatorWidget = CreateWidget(this, this->ElevatorWidgetClass);
+		ElevatorWidget->AddToViewport();
+	}
 }
