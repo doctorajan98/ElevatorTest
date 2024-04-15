@@ -2,7 +2,8 @@
 
 DEMO:
 -
-![](https://drive.google.com/file/d/1x4ZBeCMeHV1_Q3oHVuILL6-noyQAZAwo/view?usp=sharing)
+![output](https://github.com/doctorajan98/ElevatorTest/assets/77652531/7f4c0f7b-83ca-4f2a-b4b7-b624e5bd7d3b)
+
 
 Installation:
 -
