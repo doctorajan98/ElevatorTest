@@ -12,6 +12,7 @@ enum EET_FloorLevel
 	level_4 UMETA(DisplayName = "Level 4"),
 	level_5 UMETA(DisplayName = "Level 5"),
 };
+<<<<<<< HEAD
 
 UENUM(BlueprintType)
 enum E_ElevatorType
@@ -19,3 +20,5 @@ enum E_ElevatorType
 	call_Elevator UMETA(DisplayName = "Call Elevator"),
 	request_floor UMETA(DisplayName = "Request Floor"),
 };
+=======
+>>>>>>> f91999ea239571828835d8b2b1b7290cd7acada0

@@ -20,7 +20,12 @@ public:
 
 	UFUNCTION(BlueprintImplementableEvent)
 	void RequestFloorUI(const bool bShouldOpen);
+<<<<<<< HEAD
 	
 private:
 	bool bCanPressUI = true;
+=======
+private:
+	
+>>>>>>> f91999ea239571828835d8b2b1b7290cd7acada0
 };

@@ -2,6 +2,10 @@
 
 
 #include "ElevatorTest/Public/World/Elevator/ET_ElevatorTrigger.h"
+<<<<<<< HEAD
+=======
+#include "World/Elevator/ET_ElevatorTrigger.h"
+>>>>>>> f91999ea239571828835d8b2b1b7290cd7acada0
 #include "Components/BrushComponent.h"
 #include "ElevatorTest/ElevatorTestPlayerController.h"
 #include "ElevatorTest/Public/Core/GameInstance/ET_GameInstance.h"
@@ -80,6 +84,7 @@ void AET_ElevatorTrigger::OnOverlapEnd(AActor* OverlappedActor, AActor* OtherAct
 			return;
 		}
 		PC->SetInputMode(FInputModeGameOnly());
+<<<<<<< HEAD
 
 		if (UET_ElevatorWidget* ElevatorUI = Cast<UET_ElevatorWidget>(PC->GetElevatorUI()))
 		{
@@ -100,6 +105,8 @@ void AET_ElevatorTrigger::OnOverlapEnd(AActor* OverlappedActor, AActor* OtherAct
 				break;
 			}
 		}
+=======
+>>>>>>> f91999ea239571828835d8b2b1b7290cd7acada0
 		
 		PlayerCharacter = nullptr;
 		

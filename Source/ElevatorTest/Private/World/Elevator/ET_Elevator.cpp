@@ -1,12 +1,20 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "ElevatorTest/Public/World/Elevator/ET_Elevator.h"
+<<<<<<< HEAD
 
 #include "ElevatorTest/ElevatorTestPlayerController.h"
 #include "ElevatorTest/Public/Core/GameInstance/ET_GameInstance.h"
 
 
 class AElevatorTestPlayerController;
+=======
+#include "World/Elevator/ET_Elevator.h"
+
+#include "ElevatorTest/Public/Core/GameInstance/ET_GameInstance.h"
+#include "ElevatorTest/Public/World/Elevator/ET_ElevatorWidget.h"
+
+>>>>>>> f91999ea239571828835d8b2b1b7290cd7acada0
 // Sets default values
 AET_Elevator::AET_Elevator()
 {
@@ -16,6 +24,12 @@ AET_Elevator::AET_Elevator()
 	ElevatorMeshComp = CreateDefaultSubobject<UStaticMeshComponent>("Elevator StaticMeshComponent");
 	SetRootComponent(ElevatorMeshComp);
 	ElevatorMeshComp->SetMobility(EComponentMobility::Movable);
+<<<<<<< HEAD
+=======
+
+	Trigger = CreateDefaultSubobject<AET_ElevatorTrigger>("Trigger");
+	AttachToComponent(GetRootComponent(), FAttachmentTransformRules::KeepRelativeTransform);
+>>>>>>> f91999ea239571828835d8b2b1b7290cd7acada0
 }
 
 // Called when the game starts or when spawned
@@ -27,6 +41,7 @@ void AET_Elevator::BeginPlay()
 	{
 		GI->SetElevatorObject(this);
 	}
+<<<<<<< HEAD
 
 	OnActorBeginOverlap.AddUniqueDynamic(this, &AET_Elevator::OnBeginOverlap); 
 	OnActorEndOverlap.AddUniqueDynamic(this, &AET_Elevator::OnOverlapEnd);
@@ -99,3 +114,20 @@ void AET_Elevator::OnOverlapEnd(AActor* OverlappedActor, AActor* OtherActor)
 		PlayerCharacter = nullptr;
 	}
 }
+=======
+}
+
+// Called every frame
+void AET_Elevator::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+}
+
+void AET_Elevator::SetTargetFloor(const EET_FloorLevel FloorLevel)
+{
+	TargetFloor = FloorLevel;
+	MoveElevatorToTarget(TargetFloor);
+}
+
+>>>>>>> f91999ea239571828835d8b2b1b7290cd7acada0

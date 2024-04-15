@@ -8,6 +8,16 @@
 #include "Engine/TriggerVolume.h"
 #include "ET_ElevatorTrigger.generated.h"
 
+<<<<<<< HEAD
+=======
+UENUM(BlueprintType)
+enum E_ElevatorType
+{
+	call_Elevator UMETA(DisplayName = "Call Elevator"),
+	request_floor UMETA(DisplayName = "Request Floor"),
+};
+
+>>>>>>> f91999ea239571828835d8b2b1b7290cd7acada0
 /**
  * 
  */
